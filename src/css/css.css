@@ -34,13 +34,20 @@ hr{
 
 
 
-.main{
-    width: 1200px;
+
+
+.main-banner__content{
+    margin-left: 50px;
 }
 
 .main-banner{
     display: flex;
     justify-content: space-between;
+}
+
+.wrap{
+    width: 1220px;
+    margin: 0 auto;
 }
 
 .main-banner__img-container{
@@ -53,7 +60,8 @@ hr{
     height: 474px;
 }
 
-.main-banner__content-text{
+.main-banner__content-text,
+.main-content__contents-text{
     color: #999;
     font-family: Libre Franklin;
     font-size: 10px;
@@ -63,7 +71,9 @@ hr{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.main-banner__content-title{
+
+.main-banner__content-title,
+.main-content__contents-title{
     color: #000;
     font-family: Tenor Sans;
     font-size: 36px;
@@ -82,7 +92,60 @@ hr{
     line-height: 24px; /* 150% */
 }
 
+.main-banner__content-btn,
+.main-content__contents-btn{
+    color: #000;
+    font-family: Libre Franklin;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px; /* 120% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 ;
+}
 
+.main-content__contents-block{
+    display: flex;
+    width: 406.656px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.main-content{
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0 75px 0;
+}
+
+.main-content__contents-text{
+    margin-top: 24px;
+} 
+.main-content__contents-title{
+    font-size: 20px;
+    line-height: 24px; /* 120% */
+}
+.main-content__contents-btn{
+    margin-top: 15px;
+} 
+
+.main-content__contents-smaller-text{
+    margin-top: 24px;
+} 
+.main-content__contents-smaller-title{
+    font-size: 20px;
+    line-height: 24px; /* 120% */
+}
+.main-content__contents-smaller-btn{
+    margin-top: 15px;
+} 
 
 /*Подвал*/
 .footer{
@@ -132,7 +195,6 @@ form button{
     padding: 0;
     margin: 0;
     height: 48px;
-    
 }
 
 form button{
@@ -148,4 +210,29 @@ form button{
 
 .footer-content__categories ul{
     margin-right: 92px;
+}
+
+.footer-content__categories ul{
+    margin-top: 50px;
+}
+
+.footer-content__categories :nth-child(1){
+    margin-top: 20px;
+}
+
+.footer-content__categories .footer-content__nameOfBlock,
+.footer-content__otherIfomation .footer-content__nameOfBlock{
+    color: #666;
+}
+
+.footer-content__form {
+    width: 300px;
+}
+
+.footer-content__categories ul li{
+    margin-bottom: 10px;
+}
+
+.footer-content__otherIfomation ul{
+    margin-right: 130px;
 }
